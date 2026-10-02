@@ -14,6 +14,10 @@ app.use(bodyParser.urlencoded({extended : true}));
 
 app.use(cors());
 
+app.get('/',(req,res)=>{
+    res.json({message : "api is running"});
+})
+
 app.use('/api/user',userRouter);
 app.use('/api/product',productRouter);
 app.use('/api/category',categoryRouter);
