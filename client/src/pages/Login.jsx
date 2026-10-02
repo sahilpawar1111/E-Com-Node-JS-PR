@@ -20,7 +20,7 @@ const Login = () => {
 
     const createUser = async()=>{
         try {
-            const res = await axios.post('http://localhost:8081/api/user/login',user);  
+            const res = await axios.post('https://e-com-node-js-pr-vm6u.vercel.app/api/user/login',user);  
             if(res.data.status){
                 navigator('/');
                 console.log(res.data.token);

@@ -20,7 +20,7 @@ const Register = () => {
 
     const createUser = async()=>{
         try {
-            const res = await axios.post('http://localhost:8081/api/user',user);
+            const res = await axios.post('https://e-com-node-js-pr-vm6u.vercel.app/api/user',user);
             console.log(res);   
             navigator('/login');
         } catch (error) {
